@@ -1,6 +1,6 @@
 import { v } from "convex/values";
 import { internalAction } from "./_generated/server";
-import { openai } from ".";
+import { openai, TITLES_PER_AGENT } from ".";
 import { zodResponseFormat } from "openai/helpers/zod";
 import { z } from "zod";
 
@@ -30,7 +30,7 @@ Examples of great titles:
 "My Journey: Junior Dev to Tech Lead in 24 Months"
 "From Retail Worker to Software Engineer: My 6-Month Story"
 
-Generate 10 compelling, story-driven titles that follows these principles and feels authentic."`,
+Generate ${TITLES_PER_AGENT} compelling, story-driven titles that follows these principles and feels authentic."`,
         },
         { role: "user", content: args.summary },
       ],
@@ -122,7 +122,7 @@ Real Example titles from Theo:
 - AI chat apps are driving me insane
 - Is Electron really that bad?
 
-Generate 10 titles that feel authentic while maintaining high engagement potential. Avoid clickbait but create genuine curiosity. Focus on tech industry developments, programming, AI, and developer tools.`,
+Generate ${TITLES_PER_AGENT} titles that feel authentic while maintaining high engagement potential. Avoid clickbait but create genuine curiosity. Focus on tech industry developments, programming, AI, and developer tools.`,
         },
         { role: "user", content: args.summary },
       ],
