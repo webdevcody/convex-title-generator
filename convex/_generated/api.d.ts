@@ -12,7 +12,6 @@ import type * as agents from "../agents.js";
 import type * as index from "../index.js";
 import type * as reviewers from "../reviewers.js";
 import type * as rewriter from "../rewriter.js";
-import type * as tasks from "../tasks.js";
 import type * as titles from "../titles.js";
 import type * as transcripts from "../transcripts.js";
 import type * as workflow from "../workflow.js";
@@ -36,7 +35,6 @@ declare const fullApi: ApiFromModules<{
   index: typeof index;
   reviewers: typeof reviewers;
   rewriter: typeof rewriter;
-  tasks: typeof tasks;
   titles: typeof titles;
   transcripts: typeof transcripts;
   workflow: typeof workflow;
