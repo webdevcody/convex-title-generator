@@ -1,5 +1,5 @@
 import { v } from "convex/values";
-import { internalMutation, query } from "./_generated/server";
+import { internalMutation, query, mutation } from "./_generated/server";
 
 export const storeTitles = internalMutation({
   args: v.object({
@@ -34,5 +34,20 @@ export const getTitles = query({
       .withIndex("by_workflow_id", (q) => q.eq("workflowId", args.workflowId))
       .collect();
     return titles;
+  },
+});
+
+export const incrementScore = mutation({
+  args: {
+    titleId: v.string(),
+    workflowId: v.string(),
+  },
+  handler: async (ctx, args) => {
+    // TODO: Implement score increment in your titles table
+    // For now, just log that we would increment the score
+    console.log(
+      `Incrementing score for title ${args.titleId} in workflow ${args.workflowId}`
+    );
+    return null;
   },
 });

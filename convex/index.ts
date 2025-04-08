@@ -13,6 +13,6 @@ export const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
-export const TITLES_PER_AGENT = 10;
-export const MIN_RATING = 9;
+export const TITLES_PER_AGENT = 5;
+export const MIN_RATING = 10;
 export const MAX_REWRITES = 5;

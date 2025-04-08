@@ -24,8 +24,12 @@ function RouteComponent() {
 
   // Function to determine background color based on rating
   const getRatingColor = (rating: number) => {
-    if (rating >= 8) return "bg-green-900/50 border-green-700";
-    if (rating >= 6) return "bg-yellow-900/50 border-yellow-700";
+    if (rating >= 10)
+      return "bg-gradient-to-r from-green-500/50 via-emerald-500/50 to-teal-500/50 border-green-400 animate-gradient-x";
+    if (rating >= 9) return "bg-green-700/50 border-green-700";
+    if (rating >= 8) return "bg-green-800/50 border-green-500";
+    if (rating >= 7) return "bg-yellow-600/50 border-yellow-400";
+    if (rating >= 6) return "bg-orange-700/50 border-orange-500";
     return "bg-red-900/50 border-red-700";
   };
 
