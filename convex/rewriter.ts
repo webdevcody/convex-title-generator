@@ -40,6 +40,7 @@ Your goal is to rewrite the title to achieve a perfect 10/10 rating by:
 - Incorporating improvement suggestions
 - Ensuring the new title remains clear, engaging, and effective
 - keep the title under 8 words
+- No not generate Noun Phrases or Headline type of titles
 
 Output a single "title" field with your improved version. The new title should be concise, impactful, and incorporate all feedback while maintaining the core message. Please make sure the title is related to the original summary`,
         },

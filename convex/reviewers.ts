@@ -50,6 +50,7 @@ export const engagementReviewer = internalAction({
   - the best title are usually 6-8 words in length
   - more emotinally powerful titles can be shorter
   - do not make very long titles over 8 words if possible
+  - do not use Noun Phrases or Headline type of titles, subtract a point if you use one
 
 
 Please provide your numerical rating (1-11) for the title, followed by detailed feedback including strengths, weaknesses, and specific improvement suggestions. Please make sure the title is related to the summary`,

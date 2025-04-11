@@ -10,6 +10,7 @@
 
 import type * as agents from "../agents.js";
 import type * as index from "../index.js";
+import type * as prompts from "../prompts.js";
 import type * as reviewers from "../reviewers.js";
 import type * as rewriter from "../rewriter.js";
 import type * as titles from "../titles.js";
@@ -33,6 +34,7 @@ import type {
 declare const fullApi: ApiFromModules<{
   agents: typeof agents;
   index: typeof index;
+  prompts: typeof prompts;
   reviewers: typeof reviewers;
   rewriter: typeof rewriter;
   titles: typeof titles;
